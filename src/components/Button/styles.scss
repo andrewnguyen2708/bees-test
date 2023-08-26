@@ -1,0 +1,45 @@
+.icon-button {
+  cursor: pointer;
+
+  &:hover svg {
+    color: var(--black-color);
+  }
+
+  &-primary svg {
+    color: var(--primary-color);
+  }
+
+  &-error svg {
+    color: var(--error-color);
+  }
+
+  &-gray svg {
+    color: var(--gray-color);
+  }
+}
+
+.btn {
+  color: var(--white-color);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+
+  &-primary {
+    background-color: var(--primary-color);
+  }
+
+  &-error {
+    background-color: var(--error-color);
+  }
+
+  &-gray {
+    background-color: var(--gray-color);
+  }
+}

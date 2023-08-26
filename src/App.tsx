@@ -1,10 +1,13 @@
-import './App.css'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+const Users = React.lazy(() => import("./pages/Users"));
 
 function App() {
-
   return (
-    <h1>Hello world</h1>
-  )
+    <Routes>
+      <Route path="/" element={<Users />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

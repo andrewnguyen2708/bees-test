@@ -1,0 +1,15 @@
+.status__text {
+  border: 1px solid;
+  border-radius: 50px;
+  margin: 0;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+
+  &-active {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+  }
+}
