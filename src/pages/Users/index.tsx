@@ -232,14 +232,14 @@ export default function Users() {
                 ))}
               {!loading && users.length === 0 && (
                 <tr>
-                  <td colSpan={6} style={{ textAlign: "center" }}>
+                  <td colSpan={7} style={{ textAlign: "center" }}>
                     No users show
                   </td>
                 </tr>
               )}
               {loading && (
                 <tr>
-                  <td colSpan={6} style={{ textAlign: "center" }}>
+                  <td colSpan={7} style={{ textAlign: "center" }}>
                     <Loading />
                   </td>
                 </tr>
