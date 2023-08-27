@@ -18,28 +18,74 @@
   }
 }
 
-.btn {
+@mixin hover-button {
+  background-color: var(--black-color);
   color: var(--white-color);
+}
+
+.btn {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
 
-  &:hover {
-    background-color: black;
-    color: white;
+  &-contained {
+    &-primary {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      &:hover {
+        @include hover-button;
+      }
+    }
+
+    &-error {
+      background-color: var(--error-color);
+      color: var(--white-color);
+      &:hover {
+        @include hover-button;
+      }
+    }
+
+    &-gray {
+      background-color: var(--gray-color);
+      color: var(--white-color);
+      &:hover {
+        @include hover-button;
+      }
+    }
   }
 
-  &-primary {
-    background-color: var(--primary-color);
+  &-outlined {
+    &-primary {
+      background-color: var(--white-color);
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+      &:hover {
+        @include hover-button;
+      }
+    }
+
+    &-error {
+      background-color: var(--white-color);
+      border: 2px solid var(--error-color);
+      color: var(--error-color);
+      &:hover {
+        @include hover-button;
+      }
+    }
+
+    &-gray {
+      background-color: var(--white-color);
+      border: 2px solid (--gray-color);
+      color: var(--gray-color);
+      &:hover {
+        @include hover-button;
+      }
+    }
   }
 
-  &-error {
-    background-color: var(--error-color);
-  }
-
-  &-gray {
+  &-disabled {
     background-color: var(--gray-color);
   }
 }

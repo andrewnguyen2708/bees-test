@@ -32,4 +32,8 @@ function formatDate(date: Date, format?: string): string {
   return dayjs(date).format(format || "YYYY-MM-DD");
 }
 
-export { formatCurrency, formatDate };
+function createArray(length: number) {
+  return Array.from({ length }, (p, i) => i + 1);
+}
+
+export { formatCurrency, formatDate, createArray };

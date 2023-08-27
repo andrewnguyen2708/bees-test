@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pagination {
@@ -19,7 +20,7 @@
     }
 
     &:hover:not(.active) {
-      background-color: #ddd
+      background-color: #ddd;
     }
   }
 }

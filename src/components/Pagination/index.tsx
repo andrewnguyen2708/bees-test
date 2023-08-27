@@ -1,18 +1,24 @@
 import * as React from "react";
 import "./styles.scss";
+import { createArray } from "@/utils";
 
 export interface IPaginationProps {
   totalPages: number;
+  totalRecords?: number;
+  recordsPerPage?: number;
   onChangePage?: (page: number) => void;
 }
 
 export default function Pagination(props: IPaginationProps) {
   const [activePage, setActivePage] = React.useState(1);
-  const { totalPages = 5, onChangePage } = props;
-  const pages = Array.from({ length: totalPages }, (p, i) => i + 1);
+  const { totalPages = 5, onChangePage, totalRecords = 0, recordsPerPage = 0 } = props;
+  const pages = createArray(totalPages);
 
   return (
     <div className="wrapper">
+      <span>
+        {recordsPerPage}/{totalRecords} records
+      </span>
       <div className="pagination">
         <a
           onClick={() => {
