@@ -13,4 +13,4 @@ name: App Development Test
 path: ./src
 run script: npm run dev
 test script: npm run test
-link demo: 
+link demo: https://bees-test-q77t.vercel.app/
