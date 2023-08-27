@@ -33,7 +33,7 @@ function formatDate(date: Date, format?: string): string {
 }
 
 function createArray(length: number) {
-  return Array.from({ length }, (p, i) => i + 1);
+  return Array.from({ length }, (_, i) => i + 1);
 }
 
 export { formatCurrency, formatDate, createArray };

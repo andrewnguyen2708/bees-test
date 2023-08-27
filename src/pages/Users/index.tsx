@@ -17,8 +17,10 @@ import { sortByBalance, sortByDate, sortByName } from "./features/utils";
 import "./styles.scss";
 
 export default function Users() {
+  // Modal comfirm delete
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   const [users, setUsers] = useState<IUser[]>([]);
+  // list user id to delete
   const [deleteIDs, setDeteleIDs] = useState<string[]>([]);
   const [selectedIDs, setSelectedIDs] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
