@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 10px;
 }
 
 .users-table {
   min-width: 1000px;
   border-collapse: collapse;
-  margin: var(--spacing-3) 0;
+  padding: 0px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: var(--table-shadow);
@@ -33,7 +34,7 @@
     }
 
     tr:last-child {
-      border-bottom: 2px solid var(--primary-color);
+      border-bottom: 5px solid var(--primary-color);
     }
   }
 
